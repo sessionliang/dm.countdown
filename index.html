@@ -1,0 +1,24 @@
+<!DCOTYPE html>
+<head>
+	<meta charset="utf-8"/>
+	<title>定时测试</title>
+	<script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
+	<script type="text/javascript" src="countdown.js"></script>
+    <script type="text/javascript">
+    $(function(){
+            countdown.init({
+                lastTimeContainer:$("#lastTime"),
+                deathTime:$("#deathTime").html()
+            });
+    });
+    </script>
+</head>
+<body>
+	<div>
+		结束时间：<span id="deathTime">2016-05-07 12:00:00</span>
+	</div>
+	<div>
+		剩余时间：<span id="lastTime"></span>
+	</div>
+</body>
+</html>
